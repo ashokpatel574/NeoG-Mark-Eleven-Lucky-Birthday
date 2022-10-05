@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--- Favicon link-->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Assets/site.webmanifest" />
+
+    <!-- Google fonts link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <script defer src="./Script.js"></script>
+    <title>Lucky BirthDate</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"><nav>Is your birth date lucky ?</nav></header>
+      <main class="main-container">
+        <section>
+          <form class="form">
+            <div class="date-container">
+              <label for="date">Enter your birth date</label>
+              <input id="date" class="dateInput" type="date" />
+            </div>
+            <div class="number-container">
+              <label for="number">Enter your birth date</label>
+              <input id="number" class="numberInput" type="number" />
+            </div>
+
+            <button class="btn-check">Check</button>
+          </form>
+        </section>
+        <section>
+          <div class="result-container">
+            <h4 class="result"></h4>
+            <p>Wanna check for your friends too ?</p>
+            <p class="close-result">Click here</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section class="privacy-note-container">
+          <p class="privacy-note">
+            Note- We won't store your personal details.
+          </p>
+        </section>
+        <ul class="link-list-item">
+          <li class="link-list">
+            <a
+              class="link"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ashokpatel574@gmail.com"
+              target="_blank"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+          </li>
+          <li class="link-list">
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/ashokpatel574/"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+          </li>
+          <li class="link-list">
+            <a
+              class="link"
+              href="https://github.com/ashokpatel574"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </li>
+          <li class="link-list">
+            <a
+              class="link"
+              href="https://twitter.com/ashokpatel574"
+              target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="name">@Ashok Patel</p>
+      </footer>
+    </div>
+  </body>
+</html>

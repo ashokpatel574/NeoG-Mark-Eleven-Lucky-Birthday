@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* General style */
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+input::placeholder {
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 2.4rem;
+  letter-spacing: 1.25px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Background Image Section*/
+
+.wrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(./Assets/birthday.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+/* Header Style Section */
+
+.header nav {
+  font-size: 5.6rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  line-height: 7.5rem;
+  padding: 2.5rem 2rem 6rem;
+  text-align: center;
+}
+
+/* Main container Style Section */
+
+.main-container {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+label {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+input {
+  font-size: 2.4rem;
+  padding: 1rem 2.4rem;
+  border: 2px solid #fff;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+/* Result container Style Section */
+
+.result-container {
+  max-width: 45rem;
+  margin: 0 auto;
+  border: 10px solid;
+  border-radius: 8px;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: none;
+}
+
+.result {
+  font-size: 2.6rem;
+  padding: 2rem 0;
+  letter-spacing: 2.5px;
+  line-height: 4rem;
+}
+
+.result-container p {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  letter-spacing: 1.5px;
+  line-height: 3rem;
+}
+
+.close-result {
+  width: 45%;
+  margin: auto;
+  line-height: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close-result:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/* Footer Style Section */
+
+footer {
+  padding: 1em 2rem 5rem;
+  text-align: center;
+}
+
+.privacy-note {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  letter-spacing: 1.5px;
+  line-height: 4rem;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.privacy-note-container.show .privacy-note {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
+.link-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+i {
+  font-size: 3.6rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+i:hover {
+  transform: scale(1.25);
+}
+
+.name {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+/* Media Query Style Section */
+
+/* 736px / 16px --- 46em */
+
+@media (max-width: 46em) {
+  /* Header Style Section */
+
+  .header nav {
+    font-size: 4.2rem;
+    letter-spacing: 2.25px;
+    line-height: 5rem;
+    padding: 2.5rem 2rem 4rem;
+  }
+}
+
+/* 448px / 16px --- 28em */
+
+@media (max-width: 28em) {
+  /* Header Style Section */
+
+  .header nav {
+    font-size: 3.6rem;
+    letter-spacing: 1.75px;
+  }
+
+  /* Main container Style Section */
+
+  label {
+    font-size: 2rem;
+  }
+
+  input {
+    font-size: 2rem;
+    padding: 0.8rem 1.8rem;
+    border: 1px solid #fff;
+  }
+
+  /* Result container Style Section */
+
+  .result-container {
+    border: 5px solid;
+  }
+
+  .result {
+    font-size: 2rem;
+    letter-spacing: 1.75px;
+    line-height: 3rem;
+  }
+
+  .result-container p {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* Footer Style Section */
+
+  i {
+    font-size: 3.2rem;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+}
