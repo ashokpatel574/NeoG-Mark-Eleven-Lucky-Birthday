@@ -30,8 +30,6 @@
       clearTimeout(privacyNote);
       formConatiner.style.display = "none";
 
-      console.log(privacyNote);
-
       if (dateInputValue % numberInputValue === 0) {
         resultContainer.style.display = "block";
         result.innerText = `Congralutions, your Birth date is a lucky date. 🤩🍾`;
