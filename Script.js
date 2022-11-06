@@ -18,7 +18,11 @@
     e.preventDefault();
 
     if (!dateInput.value || !numberInput.value) {
-      alert("Pleaase enter your Birth date and lucky number");
+      !dateInput.value
+        ? alert("Please enter your Birth date ")
+        : alert("Please enter your lucky number");
+    } else if (numberInput.value < 0) {
+      alert("Please enter postive lucky number");
     } else {
       let numberInputValue = parseInt(numberInput.value);
       const date = dateInput.value.split("-");
